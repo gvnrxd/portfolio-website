@@ -20,11 +20,11 @@
   <!--Nav Bar-->
   <nav>
     <ul>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Resume</li>
-        <li>Contact</li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <main>
@@ -34,15 +34,15 @@
         <p>Building Clean, responsive experiences,</p>
         <button>View Projects</button>
   </main>
-  <section class="about-me">
+  <section id="about" class="about-me">
     <h2>About Me</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo voluptates amet modi, alias tempora laboriosam, nobis temporibus excepturi cumque odit dolores. Ab corrupti voluptatem corporis reiciendis, ratione exercitationem natus accusamus.</p>
   </section>
-  <section class="project-section">
+  <section id="projects" class="project-section">
     <h2>Projects</h2>
     <a href="https://github.com/gvnxr/rndomBibleVerse" target=_blank rel="noopener noreferrer" aria-label="View the rndomBibleVerse Generator Project on Github in a New Tab">View the rndomBibleVerse Generator Project on Github!</a>
   </section>
-  <section class="skills-section">
+  <section id="skills" class="skills-section">
     <h2>Skills</h2>
     <ul>
         <li>HTML</li>
@@ -51,25 +51,30 @@
         <li>Node.js</li>
     </ul>
   </section>
-  <section>
+  <section id="resume" class="resume-section">
     <h2>Resume</h2>
     <button>Download Resume</button>
   </section>
-  <section>
+  <section id="contact" class="contact-section">
     <h2>Contact Me</h2>
+    <form action="/submit" method="POST">
         <label for="name">Name:</label>
-         <input id="name" name="name" type="text" required placeholder="Enter Your Name Here">
+         <input autocomplete="name" id="name" name="name" type="text" required placeholder="Enter Your Name Here">
          <br>
         <label for="email">Email:</label>
-            <input id="email" name="email" type="text" required placeholder="Enter Your Email Here">
+            <input autocomplete="email" id="email" name="email" type="email" required placeholder="Enter Your Email Here">
         <br>
-       <textarea rows="16" cols="32">Enter Your Message Here!</textarea>
+        <label for="message">Type Your Message Below:</label><br>
+       <textarea minlength="20" maxlength="500" id="message" rows="16" cols="32" name="message" required placeholder="Enter Your Message Here!"></textarea>
+       <br>
+       <button type="submit">Submit</button>
     </form>
   </section>
+<!--Footer Starts Here-->
   <footer class="site-footer">
   <p>© 2025 gvnrxd. Built with HTML, CSS, and JavaScript.</p>
   <div class="social-links">
-    <a href="https://github.com/gvnxrd" target=_blank rel="noopener noreferrer" aria-label="View gvnrxd's Github profile">
+    <a href="https://github.com/gvnxr" target=_blank rel="noopener noreferrer" aria-label="View gvnrxd's Github profile">
       <i class="fab fa-github">gvnxrd/Github</i>
     </a>
     <a href="https://www.linkedin.com/in/gavin-raymond-433070286/" target=_blank rel="noopener noreferrer" aria-label="View gvnrxd's linkedin profile">
