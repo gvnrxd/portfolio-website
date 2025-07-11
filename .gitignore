@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# Node projects (if applicable)
+node_modules/
+
+# Log files
+*.log
+
+# Build output
+dist/
+build/
+
+# OS/Editor specific
+.vscode/
+Thumbs.db
