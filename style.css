@@ -2,10 +2,15 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #f0f6fc;
 }
 
 body{
-    background-color: grey;
+    background-color: #0d1117;
+    justify-self: center;
+    justify-content: center;
+    width: 60vw
 }
 
 nav{
@@ -47,20 +52,86 @@ nav ul li button:hover{
 
 main{
     justify-self: center;
-    background-color: red;
-    width: 50%;
-    height: 70vh;
+    justify-content: center;
+    width: 70vw;
+    height: 40vh;
+    display: flex;
 }
 
-#profile-pic{
-    margin: 5px;
-    border-radius: 100%;
-    border: 2px solid black;
-    width: auto;
-    height: 40rem;
+#profile-pic {
+  width: 20rem;              /* Equal width */
+  height: 20rem;             /* Equal height */
+  object-fit: cover;         /* Makes the image fill the area */
+  border-radius: 50%;        /* Makes it a circle */
+  border: 2px solid black;
+  margin: 5px 0 5px 2rem;    /* Top, right, bottom, left */
+}
+
+.project-button{
+    display: block;
+    justify-self: center;
+    margin: 1rem 0rem;
+    width: 25vw;
+    padding: 10px;
+    border: 1px solid #c9d1d9;
+    border-radius: 5px;
+    height: auto;
+    color: #f0f6fc;
+    background-color: #161b22;
+    font-family: "Poppins", sans-serif;
 }
 
 .main-words{
     justify-content: center;
-    
+    align-content: center;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.main-words button{
+    justify-self: center;
+}
+
+.about-me{
+    background-color: #161b22;
+    border: 1px solid #c9d1d9;
+    color: #f0f6fc;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+}
+
+.about-me h2{
+    padding-bottom: 1rem;
+}
+
+.about-me p{
+    color: #8b949e;
+}
+
+#projects{  
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#projects h2{
+    margin: 1rem 0rem;
+}
+
+.card-section{
+    display: flex;
+}
+.project-card{
+    width: 20rem;
+    height: 10rem;
+    background-color: #161b22;
+    border: 1px solid #c9d1d9;
+    border-radius: 25px;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-right: 2rem;
 }
