@@ -79,6 +79,7 @@ main{
     color: #f0f6fc;
     background-color: #161b22;
     font-family: "Poppins", sans-serif;
+    transition: background-color 0.3s ease;
 }
 
 .main-words{
@@ -247,3 +248,4 @@ footer{
     align-items: flex-end;
     display: inline-flex;
 }
+
