@@ -161,10 +161,6 @@ main{
     overflow-wrap: wrap;
 }
 
-.resume-section{
-  
-}
-
 .resume-section button{
     margin-left: 15px;
     background-color: #161b22;
@@ -234,7 +230,7 @@ main{
 }
 
 footer{
-    margin-top: 2rem;
+    margin: 2rem 0rem;;
     width: 100%;
     display: flex;
     font-size: .8rem;
@@ -244,6 +240,7 @@ footer{
 } 
 
 .social-links a{
+    margin-left: 10px;
     font-size: .8rem;
     align-items: flex-end;
     display: inline-flex;
