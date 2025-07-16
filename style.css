@@ -63,7 +63,7 @@ main{
   height: 20rem;             /* Equal height */
   object-fit: cover;         /* Makes the image fill the area */
   border-radius: 50%;        /* Makes it a circle */
-  border: 2px solid black;
+  border: 1px solid #c9d1d9;
   margin: 5px 0 5px 2rem;    /* Top, right, bottom, left */
 }
 
@@ -122,16 +122,113 @@ main{
 
 .card-section{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .project-card{
-    width: 20rem;
-    height: 10rem;
-    background-color: #161b22;
-    border: 1px solid #c9d1d9;
-    border-radius: 25px;
-    padding: 1rem;
+    display: flex;
     justify-content: center;
     align-content: center;
-    margin: 0 auto;
-    margin-right: 2rem;
+    background-color: #161b22;
+    width: 30%;
+    padding: 10px;
+    height: 12vh;
+    border: 1px solid #c9d1d9;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.skills-section ul{
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.skills-section li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-radius: 10px;
+    border: 1px solid #c9d1d9;
+    background-color: #161b22;
+    padding: 10px 10px;
+    margin: 15px 15px;
+    width: 20%;
+    overflow-wrap: wrap;
+}
+
+.resume-section{
+  
+}
+
+.resume-section button{
+    background-color: #161b22;
+    border: 1px solid #c9d1d9;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-flex;
+    margin-top: 1rem;
+}
+
+.contact-section input {
+    background-color: #161b22;
+    border-radius: 5px;
+    width: 75%;
+    height: 2rem;
+    margin: 10px 1px;
+    border: 1px solid #c9d1d9;
+    padding: 10px;
+}
+
+.contact-section textarea {
+    background-color: #161b22;
+    border-radius: 5px;
+    margin: 10px 1px;
+    border: 1px solid #c9d1d9;
+    padding: 10px;
+    transition: all 0.3s ease; /* smooth animation */
+    width: 100%;
+    height: 4rem;
+    resize: none; /* optional: disables manual resizing */
+}
+
+.contact-section textarea:focus {
+  height: 300px; /* expands vertically */
+  outline: 2px solid #007aff; /* optional: custom focus border */
+}
+
+.contact-section button {
+    background-color: #161b22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    border: 1px solid #c9d1d9;
+    padding: 10px;
+}
+
+.resume-contact-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    font-size: .8rem;
+    align-items: flex-end;
+    justify-content: space-between;
+} 
+
+.social-links a{
+    font-size: .8rem;
+    align-items: flex-end;
+    display: inline-flex;
+    padding: 0rem 1rem;
 }
