@@ -14,40 +14,41 @@
 
 </head>
 <body>
-  <!--Fallback for no JS -->
-  <noscript>
-    <p class="browsehappy">
-      This site works best with JavaScript enabled.
-    </p>
-  </noscript>
-  <!--Body Begins Here: -->
-  <!--Nav Bar-->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button><img src="./images/dark-mode.png"></button></li>
-    </ul>
-  </nav>
+  <header>
+      <!--Fallback for no JS -->
+    <noscript>
+      <p class="browsehappy">
+        This site works best with JavaScript enabled.
+      </p>
+    </noscript>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button><img src="./images/dark-mode.png"></button></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <img id="profile-pic" src="./images/profile-pic.png" alt="gvnrd in a suit" role="presentation">
-    <div class="main-words">
-       <h1>Hi, I'm Gvnrxd</h1>
+    <div class="hero">
+       <img id="profile-pic" src="./images/profile-pic.png" alt="gvnrd in a suit" role="presentation">
+       <div class="main-words">
+        <h1>Hi, I'm Gvnrxd</h1>
         <h2>Developer & Designer</h2>
         <p>Building Clean, responsive experiences,</p>
+       </div>
         <button class="project-button">View Projects</button>
     </div>
-  </main>
-  <section id="about" class="about-me">
-    <h2>About Me</h2>
-    <p>Hi there! I’m a 21-year-old aspiring software developer currently studying at Palm Beach State College, with plans to graduate in 2026 and transfer to Florida Atlantic University to complete my Bachelor’s degree in Computer Science.
+     <section id="about" class="about-me">
+      <h2>About Me</h2>
+      <p>Hi there! I’m a 21-year-old aspiring software developer currently studying at Palm Beach State College, with plans to graduate in 2026 and transfer to Florida Atlantic University to complete my Bachelor’s degree in Computer Science.
 
-I’ve been programming for a little over a year and have already earned certifications in HTML, CSS, and JavaScript. Along the way, I’ve built several projects that reflect my passion for web development and problem-solving.
+  I’ve been programming for a little over a year and have already earned certifications in HTML, CSS, and JavaScript. Along the way, I’ve built several projects that reflect my passion for web development and problem-solving.
 
-I’m highly motivated, curious, and always eager to learn. In a constantly evolving tech world, I thrive on staying up-to-date and pushing myself to grow as a developer. Whether it’s exploring new languages or building creative solutions, I’m excited about what the future holds in tech.</p>
+  I’m highly motivated, curious, and always eager to learn. In a constantly evolving tech world, I thrive on staying up-to-date and pushing myself to grow as a developer. Whether it’s exploring new languages or building creative solutions, I’m excited about what the future holds in tech.</p>
   </section>
   <section id="projects" class="project-section">
        <h2>Projects</h2>
@@ -81,40 +82,44 @@ I’m highly motivated, curious, and always eager to learn. In a constantly evol
         <li>Node.js</li>
     </ul>
   </section>
-  <div class="resume-contact-container">
-      <section id="resume" class="resume-section">
-    <h2>Resume</h2>
-    <button>Download Resume</button>
-  </section>
-      <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <form action="/submit" method="POST">
-        <label for="name">Name:</label>
-         <input autocomplete="name" id="name" name="name" type="text" required placeholder="Enter Your Name Here">
-         <br>
-        <label for="email">Email:</label>
-            <input autocomplete="email" id="email" name="email" type="email" required placeholder="Enter Your Email Here">
-        <br>
-        <label for="message">Type Your Message Below:</label><br>
-       <textarea minlength="20" maxlength="500" id="message" rows="16" cols="32" name="message" required placeholder="Enter Your Message Here!"></textarea>
-       <br>
-       <button type="submit">Submit</button>
-    </form>
-  </section>
-  </div>
+    <div class="bottom-container">
+      <div class="resume-contact-container">
+        <section id="resume" class="resume-section">
+          <h2>Resume</h2>
+          <button>Download Resume</button>
+        </section>
+        <div id="contact" class="contact-section">
+          <h2>Contact Me</h2>
+          <form action="/submit" method="POST">
+              <label for="name">Name:</label>
+              <input autocomplete="name" id="name" name="name" type="text" required placeholder="Enter Your Name Here">
+              <br>
+              <label for="email">Email:</label>
+                  <input autocomplete="email" id="email" name="email" type="email" required placeholder="Enter Your Email Here">
+              <br>
+              <label for="message">Type Your Message Below:</label><br>
+              <textarea minlength="20" maxlength="500" id="message" rows="16" cols="32" name="message" required placeholder="Enter Your Message Here!"></textarea>
+              <br>
+              <button type="submit">Submit</button>
+          </form>
+        </div>
+     </div>
+   </div>
+  </main>
 <!--Footer Starts Here-->
   <footer class="site-footer">
-  <p>© 2025 gvnrxd. Built with HTML, CSS, and JavaScript.</p>
-  <div class="social-links">
-    <a href="https://github.com/gvnxr" target=_blank rel="noopener noreferrer" aria-label="View gvnrxd's Github profile">
-      <i class="fab fa-github">gvnxrd/Github</i>
-    </a>
-    <a href="https://www.linkedin.com/in/gavin-raymond-433070286/" target=_blank rel="noopener noreferrer" aria-label="View gvnrxd's linkedin profile">
-      <i class="fab fa-linkedin">gvnrxd/Linkedin</i>
-    </a>
-  </div>
+    <p>© 2025 gvnrxd. Built with HTML, CSS, and JavaScript.</p>
+    <div class="social-links">
+      <a href="https://github.com/gvnxr" target=_blank rel="noopener noreferrer" aria-label="View gvnrxd's Github profile">
+        <i class="fab fa-github">gvnxrd/Github</i>
+      </a>
+      <a href="https://www.linkedin.com/in/gavin-raymond-433070286/" target=_blank rel="noopener noreferrer" aria-label="View gvnrxd's linkedin profile">
+        <i class="fab fa-linkedin">gvnrxd/Linkedin</i>
+      </a>
+    </div>
 </footer>
   <!--JavaScript file -->
   <script src="script.js" defer></script>
 </body>
-</html>
+</html> 
+

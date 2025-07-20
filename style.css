@@ -6,17 +6,24 @@
     color: #f0f6fc;
 }
 
+body::before{
+    content:"";
+    display: block;
+    height:5rem;
+}
+
 body{
     background-color: #0d1117;
     justify-self: center;
     justify-content: center;
-    width: 60vw
+    
 }
 
 nav{
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0px;
+    left: 0px;
 }
 
 a{
@@ -27,14 +34,15 @@ nav ul{
     display: flex;
     list-style: none;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 
 nav ul li {
-    font-size: 2rem;
-    padding-right: 20px;
-    align-content: center;  
+    font-size: 1.5rem; 
 }
 
 nav ul li a{
@@ -42,10 +50,9 @@ nav ul li a{
 }
 
 nav ul li button{
-    width: 4rem;
-    height: 4rem;
+    width: fit-content;
+    height: 2rem;
     display: flex;
-    background-color: grey;
     cursor: pointer;
     border: none;
 }
@@ -55,27 +62,32 @@ nav ul li button:hover{
 }
 
 main{
-    justify-self: center;
-    justify-content: center;
-    width: 70vw;
-    height: 40vh;
+   width: 60vw;
+   margin: 0 auto;
+}
+
+.hero{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #profile-pic {
-  width: 20rem;              /* Equal width */
-  height: 20rem;             /* Equal height */
-  object-fit: cover;         /* Makes the image fill the area */
-  border-radius: 50%;        /* Makes it a circle */
+  width: 100%;
+  max-width: 20rem;           /* Max size on desktop */
+  aspect-ratio: 1 / 1;        /* Maintains square shape */
+  object-fit: cover;
+  border-radius: 50%;
   border: 1px solid #c9d1d9;
-  margin: 5px 0 5px 2rem;    /* Top, right, bottom, left */
+  display: block;
+  float: left;
 }
 
 .project-button{
     display: block;
-    justify-self: center;
-    margin: 1rem 0rem;
-    width: 25vw;
+    margin: .5rem auto;;
+    min-width: fit-content;
+    width: 60%;
     padding: 10px;
     border: 1px solid #c9d1d9;
     border-radius: 5px;
@@ -87,17 +99,12 @@ main{
 }
 
 .main-words{
-    justify-content: center;
-    align-content: center;
-    margin-left: 2rem;
-    font-size: 1rem;
+     margin: 0 auto;
+    font-size: 2rem;
     font-family: "Poppins", sans-serif;
+    min-width: fit-content;
 }
 
-
-.main-words button{
-    justify-self: center;
-}
 
 .about-me{
     background-color: #161b22;
@@ -106,11 +113,9 @@ main{
     border-radius: 10px;
     padding: 1rem 2rem;
     margin: 2rem 0rem;
+    min-width: fit-content
 }
 
-.about-me h2{
-    padding-bottom: 1rem;
-}
 
 .about-me p{
     color: #8b949e;
@@ -121,20 +126,22 @@ main{
     padding: 10px;
 }
 
-#projects h2{
+h2{
     margin: 1rem 0rem;
 }
 
 .card-section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: .5rem;
+    
 }
 .project-card{
     display: flex;
     justify-content: center;
     align-content: center;
     background-color: #161b22;
+    min-width: fit-content;
     width: 30%;
     padding: 10px;
     height: 12vh;
@@ -142,7 +149,6 @@ main{
     border-radius: 15px;
     justify-content: center;
     align-items: center;
-    margin: 10px 0px;
     cursor: pointer;
 }
 
@@ -151,6 +157,7 @@ main{
     width: 100%;
     justify-items: center;
     flex-wrap: wrap;
+    gap: .5rem;
 }
 
 .skills-section li{
@@ -161,8 +168,8 @@ main{
     border: 1px solid #c9d1d9;
     background-color: #161b22;
     padding: 10px 10px;
-    margin: 15px 15px;
-    width: 20%;
+    width: 30%;
+    min-width: fit-content;
     overflow-wrap: wrap;
 }
 
@@ -174,19 +181,9 @@ main{
     border-radius: 10px;
     display: inline-flex;
     margin-top: 1rem;
+    min-width: fit-content;
 }
 
-.contact-section{
-   margin-left: 1rem;
-   flex: 1;
-}
-
-.contact-section h2{
-   margin: 0 auto;
-   width: 100%;
-   justify-content: center;
-   display: flex;
- }
 
 .contact-section input {
     background-color: #161b22;
@@ -197,6 +194,16 @@ main{
     border: 1px solid #c9d1d9;
     padding: 10px;
     flex: 1;
+}
+/* Float the Contact Me section to the right*/
+.bottom-container{
+    background-color: red;
+   
+}
+
+.contact-section{
+    float: right;
+    justify-items: flex-end;
 }
 
 .contact-section textarea {
@@ -224,7 +231,8 @@ main{
     margin: 0 auto;
     align-items: center;
     border-radius: 5px;
-    width: 25%;
+    width: 75%;
+    min-width: fit-content;
     height: 2rem;
     border: 1px solid #c9d1d9;
     padding: 10px;
@@ -236,18 +244,20 @@ main{
 
 footer{
     margin: 2rem 0rem;;
-    width: 100%;
     display: flex;
     font-size: .8rem;
     align-items: flex-end;
     justify-content: space-around;
-    white-space: nowrap;
 } 
 
 .social-links a{
     margin-left: 10px;
     font-size: .8rem;
     align-items: flex-end;
-    display: inline-flex;
 }
-
+/*Media Query Section*/
+@media screen and (max-width: 321px) {
+    *{
+        font-size: 1rem;
+    }
+}
