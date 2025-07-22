@@ -11,8 +11,8 @@ document.getElementsByClassName("project-button")[0].onclick = function(){
 document.querySelectorAll(".project-card").forEach(function(card) {
     card.onmouseover = function() {
         this.style.backgroundColor = "#58a6ff";
-        this.style.width = "35%";
-        this.style.height = "14vh";
+        this.style.width = "";
+        this.style.height = "";
     };
 });
 
