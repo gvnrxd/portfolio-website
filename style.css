@@ -62,8 +62,8 @@ nav ul li button:hover{
 }
 
 nav img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -273,6 +273,72 @@ footer{
 /*Media Query Section*/
 @media screen and (max-width: 321px) {
     *{
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    main{
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .about-me{
+        width: 100%;
+    }
+
+    .project-section{
+        width: 100%;
+    }
+
+    .card-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .skills-section ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .skills-section li{
+        width: 100%;
+    }
+
+    .resume-contact-container{
+        display: grid;
+        margin: 0 auto;
+    }
+
+    .resume-section {
+        width: 100%;
+    }
+
+    .resume-section button{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .contact-section{
+        width: 100%;
+    }
+
+    footer p, i{
+        font-size: .5rem;
+    }
+
+    .social-links{
+        gap: 0px;
+        display: inline;
     }
 }
