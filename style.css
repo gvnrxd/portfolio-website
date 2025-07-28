@@ -271,7 +271,81 @@ footer{
     align-items: flex-end;
 }
 /*Media Query Section*/
-@media screen and (max-width: 321px) {
+
+@media screen and (max-width: 768px){
+
+    .bottom-container{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume-contact-container{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .resume-section button{
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .contact-section {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+
+    main{
+        width: 80vw;
+    }
+
+    nav{
+        display: none;
+    }
+
+    body::before {
+        height: 1rem;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero h2{
+        font-size: 1.4rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .project-button{
+        font-size: .8rem;
+        margin-top: 1rem;
+    }
+
+    .skills-section ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-section li{
+        width: 200px;
+        height: auto;
+    }
+
+    footer p{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
     *{
         font-size: 1.2rem;
     }
@@ -304,15 +378,14 @@ footer{
         width: 100%;
     }
 
-    .skills-section ul{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+     .skills-section ul{
+        display: flex;
+        justify-content: center;
     }
 
     .skills-section li{
-        width: 100%;
+        width: 200px;
+        height: auto;
     }
 
     .resume-contact-container{
